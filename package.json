@@ -1,0 +1,35 @@
+{
+  "name": "sql_library_manager-v1",
+  "version": "1.0.0",
+  "description": "sql_library_manager",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/liux3260/sql_library_manager-v1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liux3260/sql_library_manager-v1/issues"
+  },
+  "homepage": "https://github.com/liux3260/sql_library_manager-v1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "createerror": "^1.3.0",
+    "express": "^4.17.1",
+    "express-paginate": "^1.0.0",
+    "morgan": "^1.10.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.21.8",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

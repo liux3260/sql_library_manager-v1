@@ -1,0 +1,30 @@
+extend layout.pug
+
+block title
+    title Books
+
+block content
+
+    h1 Books
+    p
+        a.button(href='/books/new') Create New Book
+        input#Search(type= "text", placeholder="Search" name="search" )
+        a.button(type="submit") Search
+    table
+        thead
+            tr
+                th Title
+                th Author
+                th Genre
+                th Year
+        tbody
+            each book in books
+                book
+                    tr
+                        td
+                            a(href='/books/' + book.id)= book.title
+                        td= book.author
+                        td= book.genre
+                        td= book.year
+            
+    script(src = "/static/javascripts/script.js")
